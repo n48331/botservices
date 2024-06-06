@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-1_eu^#3cj!$vcl6j6$j+c!o)@wcn=o4@f-&hsk$ze(+go4q@@)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['botservices.pythonanywhere.com']
 
 
 # Application definition
@@ -77,14 +77,14 @@ WSGI_APPLICATION = 'botservices.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME': 'sc-bot',
+    #     'USER': 'postgres',
+    #     'PASSWORD': '1234',
+    #     'HOST': 'localhost',
+    # },
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'sc-bot',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': 'localhost',
-    },
-    'sqlite': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     },
